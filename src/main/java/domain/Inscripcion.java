@@ -11,7 +11,8 @@ public class Inscripcion {
 
     public Inscripcion(Alumno alumnoInscripto, List<Materia> materiasInscriptas) {
         this.alumnoInscripto = alumnoInscripto;
-        this.materiasInscriptas = new ArrayList<>();
+        this.materiasInscriptas = new ArrayList<>(materiasInscriptas);
+
     }
 
     public Alumno getAlumnoInscripto() {
@@ -44,3 +45,4 @@ public class Inscripcion {
     }
 
 }
+
